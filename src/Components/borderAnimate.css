@@ -1,0 +1,92 @@
+.box{
+    position: relative;
+    background: #000;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.box::before{
+    content: '';
+    position: absolute;
+    inset: -10px 140px;
+    background:linear-gradient(315deg,#00ccff,#d400d4);
+    transition: 0.5s;
+    animation: animate 4s linear infinite;
+}
+.box:hover::before{
+    inset: -20px 0px;
+}
+
+.box::after{
+    content: '';
+    inset: 10px;
+    position: absolute;
+    background: #000;
+    border-radius: 50%;
+    z-index: 1;
+}
+.content{
+    position: absolute;
+    inset: 10px;
+    border: 6px solid #000;
+    z-index: 3;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.content img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+@media screen and (max-width: 600px) {
+    .box{
+        position: relative;
+        background: #000;
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .box:hover::before{
+        inset: -20px 0px;
+    }
+    .box::before{
+        content: '';
+        position: absolute;
+        inset: -10px 70px;
+        background:linear-gradient(315deg,#00ccff,#d400d4);
+        transition: 0.5s;
+        animation: animate 4s linear infinite;
+    }
+    .box::after{
+        content: '';
+        inset: 10px;
+        position: absolute;
+        background: #000;
+        border-radius: 50%;
+        z-index: 1;
+    }
+    .content{
+        position: absolute;
+        inset: 10px;
+        border: 6px solid #000;
+        z-index: 3;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    
+
+}
+@keyframes animate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
