@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const Navigation = () => {
   const Menus = [
     { name: "Home", icon: "home-outline", dis: "translate-x-0" },
-    { name: "Profile", icon: "person-outline", dis: "translate-x-16" },
+    { name: "About", icon: "person-outline", dis: "translate-x-16" },
     { name: "Message", icon: "chatbubble-outline", dis: "translate-x-32" },
     { name: "Photos", icon: "camera-outline", dis: "translate-x-48" },
     { name: "Settings", icon: "settings-outline", dis: "translate-x-64" },

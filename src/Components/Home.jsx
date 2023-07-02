@@ -6,6 +6,7 @@ import './borderAnimate.css'
 import { FaFacebook, FaGithub, FaLinkedin } from 'react-icons/fa'
 
 
+
 const Home = () => {
     const [theme, setTheme] = useState(localStorage.getItem("theme") ? localStorage.getItem("theme") : "light")
 
@@ -16,6 +17,7 @@ const Home = () => {
         document.querySelector("html").setAttribute("data-theme", localTheme)
 
     }, [theme])
+    
 
 
     const handleTheme = (e) => {
@@ -27,9 +29,9 @@ const Home = () => {
     }
 
     return (
-        <div className='min-h-screen w-full border-gray-500 border-2' id='Home'>
-            <div className='flex justify-between items-center m-10 '>
-                <img src={theme === "light" ? nameImg2 : nameImg} className='md:h-20 md:w-36 h-14 w-24' alt="" />
+        <div  className='min-h-screen w-full  my-10' id='Home'>
+            <div  className=' flex justify-between items-center m-10 '>
+                <img  src={theme === "light" ? nameImg2 : nameImg} className='md:h-20 md:w-36 h-14 w-24' alt="" />
                 <div className='md:flex-row md:items-center flex flex-col justify-center md:gap-4'>
                     
                         <label className="swap swap-rotate">
@@ -58,10 +60,10 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='w-2/3 md:mx-10'>
-                        <h1 className='text-3xl'>I am Md Nazmos Sakib</h1>
+                    <div  className='w-2/3 md:mx-10'>
+                        <h1 className='text-3xl md:text-5xl font-bold font-belanosima'>Myself <span className='animate-text'>Md Nazmos Sakib</span></h1>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, harum iste? Aliquam pariatur optio ea vel provident veniam illo doloremque alias quisquam, inventore, saepe, minus rem. Soluta ipsa dolores repellat.</p>
-                        <p className='flex gap-2'>
+                        <p className='flex gap-2 '>
                             <FaLinkedin className='h-8 w-8 text-blue-600'></FaLinkedin>
                             <FaGithub className='h-8 w-8'></FaGithub>
                             <FaFacebook className='h-8 w-8 text-blue-600'></FaFacebook></p>

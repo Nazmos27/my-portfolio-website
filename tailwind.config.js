@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {},
+    fontFamily:{
+      belanosima:[ 'Belanosima']
+    }
   },
   plugins: [require("daisyui")],
 }
