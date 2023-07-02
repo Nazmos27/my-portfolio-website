@@ -6,7 +6,7 @@ const Navigation = () => {
     { name: "About", icon: "person-outline", dis: "translate-x-16" },
     { name: "Message", icon: "chatbubble-outline", dis: "translate-x-32" },
     { name: "Photos", icon: "camera-outline", dis: "translate-x-48" },
-    { name: "Settings", icon: "settings-outline", dis: "translate-x-64" },
+    { name: "Contact", icon: "settings-outline", dis: "translate-x-64" },
   ];
   const [active, setActive] = useState(0);
   return (

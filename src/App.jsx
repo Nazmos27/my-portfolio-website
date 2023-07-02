@@ -9,6 +9,7 @@ import Home from './Components/Home'
 import About from './Components/About'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+import Skills from './Components/Skills'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,9 +21,9 @@ function App() {
     <div className="min-h-full flex flex-col justify-center items-center">
       <Home></Home>
       <About></About>
+      <Skills></Skills>
       <Navigation></Navigation>
       <Contact></Contact>
-      <Camera></Camera>
       
 
     </div>
