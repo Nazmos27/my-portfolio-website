@@ -50,7 +50,7 @@ const Home = () => {
 
                     </label>
 
-                    <button className='btn btn-primary btn-sm md:btn md:btn-primary text-xs'>My Resume</button>
+                    <button className='btn btn-primary btn-sm md:btn md:btn-primary text-xs'><a href="https://drive.google.com/file/d/1igwlgIk9CX1_ufVrv9oBLYJKUCaydb2-/view?usp=sharing">My Resume</a></button>
 
                 </div>
             </div>
@@ -59,7 +59,7 @@ const Home = () => {
                     <div className='md:h-96 md:w-1/3 my-10'>
                         <div className='box'>
                             <div className='content'>
-                                <img src={profile} alt="" />
+                                <img src="https://i.ibb.co/Wk4L53C/cutout-sakib-1.png" alt="" />
                             </div>
                         </div>
                     </div>
