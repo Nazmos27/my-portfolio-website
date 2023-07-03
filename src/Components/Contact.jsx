@@ -1,6 +1,9 @@
 import React, { useRef } from 'react'
 import emailjs from '@emailjs/browser';
 import { Player } from '@lottiefiles/react-lottie-player';
+import {SlLocationPin} from 'react-icons/sl'
+import { FaWhatsapp } from 'react-icons/fa';
+import { AiOutlineMail } from 'react-icons/ai'
 
 
 
@@ -22,30 +25,36 @@ const Contact = () => {
 
 
   return (
-    <div className='min-h-screen w-full p-10' id='Contact'>
-      <div className='flex flex-col-reverse md:flex-row'>
-        <form ref={form} onSubmit={sendEmail} className='flex flex-col'>
-          <label>Name</label>
-          <input type="text" name="user_name" />
-          <label>Email</label>
-          <input type="email" name="user_email" />
-          <label>Message</label>
-          <textarea name="message" />
-          <input type="submit" value="Send" />
-          
-        </form>
+    <div className='min-h-screen w-full p-10 mb-10' id='Contact'>
+      <h1 className='text-3xl md:text-5xl text-center md:mb-14 mb-8'>Contact</h1>
+      <div className='flex flex-col-reverse md:flex md:justify-center md:items-center md:flex-row md:gap-8'>
+        <form ref={form} onSubmit={sendEmail} className='flex flex-col bg-base-200 p-10'>
+          <label className='my-2'>Name</label>
+          <input type="text" name="user_name" className='input input-bordered' />
+          <label className='my-2'>Email</label>
+          <input type="email" name="user_email" className='input input-bordered' />
+          <label className='my-2'>Message</label>
+          <textarea name="message" className='input input-bordered h-32 md:h-32 md:w-52' />
+          <input type="submit" value="Send" className='input input-bordered my-4' />
 
-        {/* <LottiePlayer
-          src="https://assets9.lottiefiles.com/packages/lf20_u25cckyh.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop controls autoplay
-        ></LottiePlayer> */}
-        <Player
-          // set the ref to your class instance
-          autoplay={true}
-          loop={true}
-          controls={true}
-          src="https://assets9.lottiefiles.com/packages/lf20_u25cckyh.json"
-          style={{ height: '300px', width: '300px' }}
-        ></Player>
+        </form>
+      <div className='divider md:hidden'>Or</div>
+
+        <div>
+          <Player
+            // set the ref to your class instance
+            autoplay={true}
+            loop={true}
+            controls={true}
+            src="https://assets9.lottiefiles.com/packages/lf20_u25cckyh.json"
+            style={{ height: '300px', width: '300px' }}
+          ></Player>
+          <div>
+            <p className='flex items-center justify-center gap-2'><SlLocationPin></SlLocationPin> <span className='font-semibold'>Location :</span> Dhaka,Bangladesh</p>
+            <p className='flex items-center justify-center gap-2'><FaWhatsapp></FaWhatsapp><span className='font-semibold'>Whatsapp : </span>+8801789512433</p>
+            <p className='flex items-center justify-center gap-2'><AiOutlineMail></AiOutlineMail><span className='font-semibold'>Email : </span>nazmos789@gmail.com</p>
+          </div>
+        </div>
       </div>
     </div>
   )

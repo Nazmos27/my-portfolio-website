@@ -4,13 +4,14 @@ const Navigation = () => {
   const Menus = [
     { name: "Home", icon: "home-outline", dis: "translate-x-0" },
     { name: "About", icon: "person-outline", dis: "translate-x-16" },
-    { name: "Message", icon: "chatbubble-outline", dis: "translate-x-32" },
-    { name: "Photos", icon: "camera-outline", dis: "translate-x-48" },
-    { name: "Contact", icon: "settings-outline", dis: "translate-x-64" },
+    { name: "Skills", icon: "flash-outline", dis: "translate-x-32" },
+    { name: "Projects", icon: "desktop-outline", dis: "translate-x-48" },
+    { name: "Contact", icon: "call-outline", dis: "translate-x-64" },
+    
   ];
   const [active, setActive] = useState(0);
   return (
-    <div className="bg-gray-600 px-6 rounded-t-xl fixed bottom-2 z-50">
+    <div className="bg-gray-600  px-6 rounded-t-xl fixed bottom-2 z-50">
       <ul className="flex relative">
         <span
           className={`bg-rose-600 duration-500 ${Menus[active].dis} border-4 border-gray-900 h-16 w-16 absolute

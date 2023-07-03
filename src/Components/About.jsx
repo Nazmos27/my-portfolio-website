@@ -20,7 +20,7 @@ const About = () => {
               delaySpeed={1000}
 
             /></span></h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quisquam nihil id animi. Porro atque laboriosam alias voluptas repudiandae quibusdam dolor amet perspiciatis earum distinctio expedita accusamus soluta enim deleniti libero dolores temporibus, non, esse obcaecati architecto mollitia, animi quas. Recusandae ipsa repellendus aliquid perferendis maiores autem suscipit blanditiis sapiente?</p>
+          <p>I am always a learner.Learn from my surroundings.Though I am a student of Law now,I always passionate to learn new things,adopt new technologies.That's why now I am a MERN stack developer.I am passionate to change myself everyday to a greater outcome. <br />My interpersonal skill is good enough I believe.I can quickly learn and can also teach another.My teamwork experience is smooth.Also my networking skill is quite impressive,I can communicate fast <br />I am very willful and promising to do something remarkable in this field.I work hard and I know "Hard things pay off!"</p>
         </div>
         <img data-aos="flip-left"
           data-aos-easing="ease-out-cubic"
