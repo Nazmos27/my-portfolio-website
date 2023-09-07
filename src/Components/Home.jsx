@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import nameImg from '/04c3b6622747417c8f5efe62cef5972f.png'
 import nameImg2 from '/fontspace.png'
+import resume from '/nazmos-sakib-resume.pdf'
 import profile from '/cutout_sakib.png'
 import './borderAnimate.css'
 import { FaFacebookSquare, FaGithub, FaLinkedin } from 'react-icons/fa'
@@ -50,7 +51,7 @@ const Home = () => {
 
                     </label>
 
-                    <button className='btn btn-primary btn-sm md:btn md:btn-primary text-xs'><a href="https://drive.google.com/file/d/1igwlgIk9CX1_ufVrv9oBLYJKUCaydb2-/view?usp=sharing">My Resume</a></button>
+                    <button className='btn btn-primary btn-sm md:btn md:btn-primary text-xs' ><a href={resume} download={true}>My Resume</a></button>
 
                 </div>
             </div>
@@ -59,12 +60,12 @@ const Home = () => {
                     <div className='md:h-96 md:w-1/3 my-10'>
                         <div className='box'>
                             <div className='content'>
-                                <img src="https://i.ibb.co/Wk4L53C/cutout-sakib-1.png" alt="" />
+                                <img src={profile} alt="" />
                             </div>
                         </div>
                     </div>
                     <div className='w-2/3 md:mx-10'>
-                        <h1 className='text-3xl md:text-5xl font-bold font-belanosima'>Myself <span className='animate-text'>Md Nazmos Sakib</span></h1>
+                        <h1 className='text-3xl md:text-5xl font-bold font-belanosima'>Myself <span className='animate-text'>Md. Nazmos Sakib</span></h1>
                         <div><h1 className='md:text-2xl text-xl'>I am a <span>
                             <Typewriter
                                 words={['full-stack developer','MERN stack developer','learner']}
@@ -76,7 +77,7 @@ const Home = () => {
                                 delaySpeed={1000}
 
                             /></span></h1></div>
-                        <p>Welcome! I am a student,studying Law at "Department Of Law" in Jagannath University,Dhaka,Bangladesh!I am 23 years old now.As a MERN stack developer I have a good control over mongoDB,Express.js,React and Node.js</p>
+                        <p>Welcome! I am a student, studying at the "Department of Law" at Jagannath University, Dhaka, Bangladesh! I am 23 years old now. As a MERN stack developer, I have good control over MongoDB,Express.js, React, and Node.js.</p>
                         <p className='flex gap-2 mt-4 '>
                             <div className='tooltip' data-tip='LinkedIn'><a href="https://www.linkedin.com/in/nazmos-sakib-31ab58274/"><FaLinkedin className='h-8 w-8 text-blue-600'></FaLinkedin></a></div>
                             <div className='tooltip' data-tip='Github'> <a href="https://github.com/Nazmos27"><FaGithub className='h-8 w-8'></FaGithub></a></div>

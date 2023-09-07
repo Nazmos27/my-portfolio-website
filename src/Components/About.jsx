@@ -12,7 +12,7 @@ const About = () => {
           <h1 className='md:text-5xl text-3xl'><span>
             <Typewriter
               words={['About Me']}
-              loop={0}
+              loop={5}
               cursor
               cursorStyle='_'
               typeSpeed={70}
@@ -20,7 +20,7 @@ const About = () => {
               delaySpeed={1000}
 
             /></span></h1>
-          <p>I am always a learner.Learn from my surroundings.Though I am a student of Law now,I always passionate to learn new things,adopt new technologies.That's why now I am a MERN stack developer.I am passionate to change myself everyday to a greater outcome. <br />My interpersonal skill is good enough I believe.I can quickly learn and can also teach another.My teamwork experience is smooth.Also my networking skill is quite impressive,I can communicate fast <br />I am very willful and promising to do something remarkable in this field.I work hard and I know "Hard things pay off!"</p>
+          <p>I am always a learner. Learn from my surroundings. Though I am a student of law now, I am always passionate about learning new things and adopting new technologies. That's why I am now a MERN stack developer. <br /> I am passionate about changing myself every day for a greater outcome. My interpersonal skills are good enough, I believe. I can quickly learn and can also teach others. My teamwork experience has been smooth. <br /> Also, my networking skills are quite impressive; I can communicate quickly, and I am very willful and promising to do something remarkable in this field. I work hard, and I know "hard things pay off!"</p>
         </div>
         <img data-aos="flip-left"
           data-aos-easing="ease-out-cubic"

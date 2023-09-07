@@ -1,7 +1,7 @@
 import React from 'react'
-import summerImg from '../../../public/Projects/summerCamp.png'
-import heroImg from '../../../public/Projects/herotoys.png'
-import chefImg from '../../../public/Projects/chef_studio.png'
+import summerImg from '/Projects/summerCamp.png'
+import heroImg from '/Projects/herotoys.png'
+import chefImg from '/Projects/chef_studio.png'
 import { FaGitAlt, FaGithub } from 'react-icons/fa'
 import { BsBoxArrowUpRight } from 'react-icons/bs'
 import { Typewriter } from 'react-simple-typewriter'
@@ -12,7 +12,7 @@ const MyProjects = () => {
         <div className='min-h-screen w-full md:my-32 my-16' id='Projects'>
             <div className='text-center md:my-8'><h1 className='md:text-5xl text-3xl'><span>
                 <Typewriter
-                    words={['My Skills']}
+                    words={['My Projects']}
                     loop={0}
                     cursor
                     cursorStyle='_'

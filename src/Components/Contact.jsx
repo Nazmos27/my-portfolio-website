@@ -35,7 +35,7 @@ const Contact = () => {
           <input type="email" name="user_email" className='input input-bordered' />
           <label className='my-2'>Message</label>
           <textarea name="message" className='input input-bordered h-32 md:h-32 md:w-52' />
-          <input type="submit" value="Send" className='input input-bordered my-4' />
+          <input type="submit" value="Send" className='input input-bordered my-4 btn btn-secondary text-white font-semibold' />
 
         </form>
       <div className='divider md:hidden'>Or</div>

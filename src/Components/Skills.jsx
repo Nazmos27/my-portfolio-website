@@ -19,7 +19,10 @@ import netlifyImg from '/icons/netlify-svgrepo-com.svg'
 import gitImg from '/icons/git-svgrepo-com.svg'
 import npmImg from '/icons/npm-svgrepo-com.svg'
 import figmaImg from '/icons/figma-svgrepo-com.svg'
+import reactNative from '/icons/react-native.png'
+import sqlite from '/icons/sq-lite.svg'
 import Marquee from 'react-fast-marquee'
+
 import { Typewriter } from 'react-simple-typewriter'
 
 
@@ -138,7 +141,8 @@ const Skills = () => {
           <h1 className='text-3xl my-2'>|  Familiar  |</h1>
           <hr className='w-2/3 mx-auto border-[1px] ' />
         </div>
-        <div className='flex justify-center gap-4'>
+        <Marquee direction='left'>
+        <div className='flex justify-center gap-4 mx-4'>
           <div className="container1 ">
             <div className='card'>
               <img src={nextImg} alt="Next.js" className='h-8 w-8 mx-auto' />
@@ -151,7 +155,20 @@ const Skills = () => {
               <h1 className='text-xl font-belanosima'>Node.js</h1>
             </div>
           </div>
+          <div className="container1 ">
+            <div className='card'>
+              <img src={reactNative} alt="React-Native" className='h-8 w-8 mx-auto' />
+              <h1 className='text-xl font-belanosima'>React Native</h1>
+            </div>
+          </div>
+          <div className="container1 ">
+            <div className='card'>
+              <img src={sqlite} alt="SQLite" className='h-8 w-8 mx-auto' />
+              <h1 className='text-xl font-belanosima'>SQLite</h1>
+            </div>
+          </div>
         </div>
+        </Marquee>
       </div>
       {/* Tools Section */}
       <div>
