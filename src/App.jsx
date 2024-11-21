@@ -1,6 +1,4 @@
-import { useEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useEffect } from 'react'
 import './App.css'
 import Navigation from './Components/Navigation'
 import Contact from './Components/Contact'
@@ -11,9 +9,10 @@ import 'aos/dist/aos.css'
 import Skills from './Components/Skills'
 import Acquisition from './Components/Acquisition/Acquisition'
 import MyProjects from './Components/MyProjects/MyProjects'
+import Blog from './Components/Blog'
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
   useEffect(() => {
     Aos.init()
   }, [])
@@ -25,6 +24,7 @@ function App() {
       <Skills></Skills>
       <MyProjects></MyProjects>
       <Acquisition></Acquisition>
+      <Blog></Blog>
       <Contact></Contact>
       <Navigation></Navigation>
       <footer className="footer footer-center p-4 bg-base-300 text-base-content mb-20 md:mb-24">
