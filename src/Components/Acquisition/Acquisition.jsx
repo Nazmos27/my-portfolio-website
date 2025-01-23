@@ -52,7 +52,7 @@ const Acquisition = () => {
                         className="mySwiper"
                     >
                         <SwiperSlide>
-                            <img src="https://i.ibb.co/h73pQRB/IMG20230703174912.jpg" />
+                            <img  src="https://i.ibb.co/h73pQRB/IMG20230703174912.jpg" />
                         </SwiperSlide>
                         <SwiperSlide>
                             <img src="https://i.ibb.co/55DQKD1/IMG20230703174822.jpg" />
@@ -73,15 +73,7 @@ const Acquisition = () => {
             <div className='text-center md:mt-10 mt-6'>
                 <h1 className='md:text-2xl text-xl font-semibold font-belanosima'>Acquisitions</h1>
             </div>
-            <div className='my-10 md:flex justify-center items-center gap-12'>
-                <img src="https://i.ibb.co/zZP155N/Coursera-YTVR2-GDHRCLC.png" alt="React Native Certificate" className='md:w-1/3 w-full' />
-                <div className='md:w-1/3 '>
-                    <h1 className='md:text-3xl text-2xl text-center md:text-left my-4 md:my-0 font-semibold'>React Native Course From Coursera</h1>
-                    <p className='text-sm'>React Native is an open-source framework for building cross-platform applications (apps) using React and the platform's native capabilities. In this course, I have move from the basics of React to a more advanced implementation using React Native. I have review a wide range of different React components and ways of styling them. And I have get to practice using different mobile methods of interactivity with React Native.</p>
-                    <p><span className='font-semibold'>Verify At : </span><a href="https://coursera.org/share/7bdd5ae2a94ef454ac91e6643cd799ae" className='link-primary underline md:text-xs text-[10px]'>https://coursera.org/share/7bdd5ae2a94ef454ac91e6643cd799ae</a></p>
-                </div>
-
-            </div>
+            
         </div>
     )
 }
